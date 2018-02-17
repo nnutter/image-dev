@@ -1,6 +1,6 @@
 FROM fedora:27
 
-RUN dnf install \
+RUN dnf install --assumeyes \
         ansible \
         ansible-lint \
         git \
