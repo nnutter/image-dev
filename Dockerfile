@@ -3,6 +3,7 @@ FROM fedora:27
 RUN dnf install --assumeyes \
         ansible \
         ansible-lint \
+        bash-completion \
         findutils \
         git \
         gnupg2 \
