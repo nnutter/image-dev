@@ -39,4 +39,4 @@ WORKDIR /home/nnutter
 
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/entrypoint.sh"]
 
-CMD ["/bin/bash", "-l"]
+CMD ["/bin/bash", "-lc", "tmuxs"]
