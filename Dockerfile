@@ -7,6 +7,7 @@ RUN dnf install --assumeyes \
         findutils \
         git \
         gnupg2 \
+        man-pages \
         mosh \
         ShellCheck \
         sudo \
