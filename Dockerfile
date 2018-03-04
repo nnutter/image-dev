@@ -19,6 +19,7 @@ RUN dnf install --assumeyes \
         mosh \
         ncurses-devel \
         openssl-devel \
+        procps-ng \
         readline-devel \
         sudo \
         tmux \
