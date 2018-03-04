@@ -24,6 +24,7 @@ RUN dnf install --assumeyes \
         sudo \
         tmux \
         unixODBC-devel \
+        unzip \
         vim-enhanced \
         yamllint \
     && dnf clean all \
