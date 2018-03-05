@@ -1,6 +1,7 @@
 FROM fedora:27
 
-RUN dnf install --assumeyes \
+RUN dnf upgrade --assumeyes \
+    && dnf install --assumeyes \
         ShellCheck \
         ansible \
         ansible-lint \
