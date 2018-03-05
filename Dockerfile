@@ -10,6 +10,7 @@ RUN dnf install --assumeyes \
         findutils \
         git \
         gnupg2 \
+        hostname \
         libffi-devel \
         libtool \
         libxslt-devel \
