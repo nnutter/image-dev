@@ -49,4 +49,4 @@ ENV LC_ALL=en_US.UTF-8 \
 
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/entrypoint.sh"]
 
-CMD ["/bin/bash", "-lc", "tmuxs"]
+CMD ["/bin/bash", "-l"]
