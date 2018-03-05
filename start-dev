@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o errexit -o nounset -o pipefail
+
+if ! test -f /home/nnutter/.ssh/id_rsa
+then
+  ssh-keygen -b 4096 -C nnutter@dev.nnutter.com -f /home/nnutter/.ssh/id_rsa
+  chown 1000:1000 /home/nnutter/.ssh/id_rsa{,.pub}
+fi
+
+docker pull nnutter/dev
+docker run --env TERM=$TERM --hostname dev.nnutter.com --interactive --rm --tty --volume /home/nnutter:/home/nnutter:z nnutter/dev
