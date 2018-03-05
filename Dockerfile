@@ -39,6 +39,10 @@ USER nnutter:nnutter
 VOLUME /home/nnutter
 WORKDIR /home/nnutter
 
+ENV LC_ALL=en_US.UTF-8 \
+    LANG=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8
+
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/entrypoint.sh"]
 
 CMD ["/bin/bash", "-lc", "tmuxs"]
