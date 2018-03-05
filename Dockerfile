@@ -1,6 +1,7 @@
 FROM fedora:27
 
-RUN dnf upgrade --assumeyes \
+RUN sed -i -e '/^tsflags=nodocs$/d' /etc/dnf/dnf.conf \
+    && dnf upgrade --assumeyes \
     && dnf install --assumeyes https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-27.noarch.rpm \
     && dnf install --assumeyes https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-27.noarch.rpm \
     && dnf install --assumeyes \
