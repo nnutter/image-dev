@@ -1,8 +1,8 @@
 FROM fedora:27
 
 RUN dnf upgrade --assumeyes \
-    && dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-27.noarch.rpm \
-    && dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-27.noarch.rpm \
+    && dnf install --assumeyes https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-27.noarch.rpm \
+    && dnf install --assumeyes https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-27.noarch.rpm \
     && dnf install --assumeyes \
         ShellCheck \
         ansible \
